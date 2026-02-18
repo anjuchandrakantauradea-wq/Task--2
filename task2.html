@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Grocery & Task Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>My Smart Website</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>🛒 Smart Grocery & Task Manager</h1>
+    </div>
+<div class="container">
+
+    <!-- GROCERY -->
+  <!-- GROCERY -->
+<section class="card grocery-card">
+    <h2>🛒 Smart Grocery List</h2>
+
+    <input type="text" id="itemInput" 
+           placeholder="Enter grocery item" 
+           onkeyup="showSuggestions()">
+
+     <! -- Suggestions box -- >
+    <ul id="suggestions" class="suggestion-box"></ul>
+
+    <button onclick="addItem()">Add Item</button>
+
+    <h3>Your Grocery Items</h3>
+    <ul id="groceryList"></ul>
+</section>
+
+
+    </section>
+
+    <!-- PASSWORD VALIDATION -->
+    <section class="card password-card">
+        <h2>🔐 Password Verification</h2>
+        <input type="password" id="passwordInput" placeholder="Enter Password">
+        <button onclick="checkPassword()">Verify Password</button>
+        <p id="passwordResult"></p>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="card contact-card">
+        <h2>📩 Contact Form</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <textarea id="message" placeholder="Enter Your Message"></textarea>
+
+            <button type="submit">Submit Message</button>
+            <button type="button" onclick="toggleMode()">🌙</button>
+
+
+            <p id="formResult"></p>
+        </form>
+    </section>
+
+</div>
+<h2><i class="fa-solid fa-cart-shopping"></i> Smart Grocery List</h2>
+<h2><i class="fa-solid fa-lock"></i> Password Verification</h2>
+<h2><i class="fa-solid fa-envelope"></i> Contact Form</h2>
+  <script src="task2.js"></script>
+</body>
+</html>
+
+
+
+
+
+
